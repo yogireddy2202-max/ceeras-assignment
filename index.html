@@ -3,12 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<h4> Hello Explorers🚀✨<\h4>
-<h2>Welcome to Space Explorer 🚀</h2>
-future of space exploration.</p>
-<title>VEERA YOGESWARI | Space Explorer</title
-<p>Discover the universe, explore new horizons, and experience the future of space exploration.</p>
-
+<title>Hello | Space Explorer</title>
 
 <style>
 
@@ -17,6 +12,7 @@ future of space exploration.</p>
     padding:0;
     box-sizing:border-box;
     font-family:'Segoe UI',sans-serif;
+    scroll-behavior:smooth;
 }
 
 body{
@@ -29,7 +25,7 @@ body{
     linear-gradient(135deg,#020617,#0f172a,#111827);
 }
 
-/* Animated Stars */
+/* Stars background */
 body::before{
     content:"";
     position:fixed;
@@ -37,8 +33,7 @@ body::before{
     left:0;
     width:100%;
     height:100%;
-    background-image:
-    radial-gradient(white 1px, transparent 1px);
+    background-image:radial-gradient(white 1px, transparent 1px);
     background-size:40px 40px;
     opacity:0.2;
     animation:starsMove 80s linear infinite;
@@ -50,8 +45,7 @@ body::before{
     to{transform:translateY(-1000px);}
 }
 
-/* Hero Section */
-
+/* HEADER */
 header{
     min-height:100vh;
     display:flex;
@@ -63,7 +57,7 @@ header{
 }
 
 header h1{
-    font-size:5rem;
+    font-size:4.8rem;
     font-weight:800;
     background:linear-gradient(90deg,#38bdf8,#8b5cf6,#c084fc);
     -webkit-background-clip:text;
@@ -75,9 +69,10 @@ header h2{
     color:#cbd5e1;
 }
 
+/* Stylish intro */
 header p{
-    margin-top:25px;
     max-width:850px;
+    margin-top:20px;
     color:#e2e8f0;
     font-size:1.15rem;
     line-height:1.8;
@@ -93,10 +88,14 @@ header p{
     font-size:1rem;
     cursor:pointer;
     box-shadow:0 0 25px rgba(139,92,246,.5);
+    transition:0.3s;
 }
 
-/* Sections */
+.btn:hover{
+    transform:scale(1.05);
+}
 
+/* SECTIONS */
 section{
     padding:80px 10%;
 }
@@ -108,6 +107,7 @@ section{
     color:#38bdf8;
 }
 
+/* CARDS */
 .cards{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -120,7 +120,7 @@ section{
     border-radius:20px;
     padding:25px;
     border:1px solid rgba(255,255,255,0.1);
-    transition:.4s;
+    transition:0.4s;
 }
 
 .card:hover{
@@ -133,6 +133,7 @@ section{
     color:#7dd3fc;
 }
 
+/* ABOUT */
 .about{
     text-align:center;
     max-width:900px;
@@ -141,6 +142,7 @@ section{
     line-height:1.8;
 }
 
+/* FOOTER */
 footer{
     text-align:center;
     padding:30px;
@@ -149,136 +151,104 @@ footer{
 }
 
 </style>
+
 </head>
 
 <body>
 
+<!-- HERO SECTION -->
 <header>
 
 <h1>🚀 Yogi Reddy</h1>
 
 <h2>Electrical Engineering Student | Technology Enthusiast</h2>
 
+<!-- ✨ Stylish Intro -->
 <p>
-Welcome to my Space Exploration Website.
-I am passionate about science, innovation, engineering,
-space technology, and future discoveries.
-This project explores the wonders of our universe,
-from planets and galaxies to groundbreaking missions
-that expand human knowledge.
+✨ Hello Explorers! I’m Yogi Reddy, an Electrical Engineering student passionate about space, innovation, and technology.  
+Step into my universe where science meets imagination and exploration begins beyond Earth 🚀🌌
 </p>
 
 <button class="btn">Explore Space</button>
 
 </header>
 
+<!-- ABOUT -->
 <section>
-
 <h2 class="title">About Me</h2>
-
 <div class="about">
-I am an engineering student who enjoys learning about
-technology, renewable energy, artificial intelligence,
-space science, and innovation. My goal is to develop
-technical skills, build impactful projects, and contribute
-to future technological advancements.
+I am an engineering student passionate about technology, renewable energy, artificial intelligence, and space science.  
+I enjoy building projects and learning how engineering can shape the future of space exploration.
 </div>
-
 </section>
 
+<!-- PLANETS -->
 <section>
-
 <h2 class="title">🪐 Featured Planets</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>Mars</h3>
-<p>
-The Red Planet is one of the most promising destinations
-for future human exploration and settlement.
-</p>
+<p>The Red Planet and a future human exploration target.</p>
 </div>
 
 <div class="card">
 <h3>Earth</h3>
-<p>
-Our home planet and the only known place in the universe
-that supports life.
-</p>
+<p>Our home planet and the only known life-supporting world.</p>
 </div>
 
 <div class="card">
 <h3>Jupiter</h3>
-<p>
-The largest planet in our solar system with powerful storms
-and dozens of fascinating moons.
-</p>
+<p>The largest planet with powerful storms and many moons.</p>
 </div>
 
 </div>
-
 </section>
 
+<!-- MISSIONS -->
 <section>
-
-<h2 class="title">🚀 Famous Space Missions</h2>
+<h2 class="title">🚀 Space Missions</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>Apollo 11</h3>
-<p>
-The historic mission that successfully landed humans
-on the Moon in 1969.
-</p>
+<p>First human landing on the Moon.</p>
 </div>
 
 <div class="card">
 <h3>Mars Rover</h3>
-<p>
-Robotic explorers studying Mars and searching for
-evidence of ancient life.
-</p>
+<p>Robotic missions exploring Mars surface.</p>
 </div>
 
 <div class="card">
 <h3>James Webb Telescope</h3>
-<p>
-A powerful space telescope revealing the deepest
-regions of the universe.
-</p>
+<p>Observing deep space and early universe galaxies.</p>
 </div>
 
 </div>
-
 </section>
 
+<!-- FUTURE GOALS -->
 <section>
-
 <h2 class="title">🌌 Future Goals</h2>
-
 <div class="about">
-My ambition is to continuously improve my technical
-knowledge, work on innovative engineering projects,
-and explore emerging technologies that can contribute
-to sustainable development and future space exploration.
+My goal is to grow in engineering, build innovative projects, and contribute to future space exploration technologies.
 </div>
-
 </section>
 
+<!-- CONTACT -->
 <section>
-
 <h2 class="title">📩 Contact</h2>
-
 <div class="about">
-Email: yogireddy2202@gmail.comcom<br><br>
+Email: yogireddy2202@gmail.com<br><br>
 LinkedIn: https://www.linkedin.com/in/veera-yogeswari-polimera-5356672a7<br><br>
 Location: India
 </div>
-
 </section>
 
+<!-- FOOTER -->
 <footer>
 © 2026 Yogi Reddy | Space Exploration Portfolio
 </footer>
