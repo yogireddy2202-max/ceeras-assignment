@@ -3,154 +3,152 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yogi Reddy | Portfolio</title>
+<title>Luxury Cars</title>
 
 <style>
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-    background:linear-gradient(135deg,#0f172a,#1e3a8a,#0ea5e9);
-    min-height:100vh;
+    background:#0a0a0a;
     color:white;
 }
 
 header{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.8)),
+    url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    padding:60px 20px;
 }
 
 header h1{
-    font-size:3rem;
-    margin-bottom:10px;
+    font-size:5rem;
+    letter-spacing:3px;
 }
 
 header p{
     font-size:1.2rem;
-    color:#e2e8f0;
-}
-
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:20px;
-}
-
-.card{
-    background:rgba(255,255,255,0.12);
-    backdrop-filter:blur(12px);
-    border:1px solid rgba(255,255,255,0.2);
-    border-radius:20px;
-    padding:25px;
-    margin-bottom:25px;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-h2{
-    color:#f8fafc;
-    margin-bottom:15px;
-}
-
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-}
-
-.skill{
-    background:#ffffff22;
-    padding:10px 18px;
-    border-radius:30px;
+    margin-top:15px;
+    color:#ddd;
 }
 
 .btn{
-    display:inline-block;
-    margin-top:15px;
-    background:white;
-    color:#0f172a;
-    text-decoration:none;
-    padding:12px 25px;
-    border-radius:30px;
+    margin-top:30px;
+    padding:15px 35px;
+    background:gold;
+    border:none;
+    border-radius:50px;
+    font-size:1rem;
+    cursor:pointer;
     font-weight:bold;
 }
 
-.btn:hover{
-    background:#dbeafe;
+.section-title{
+    text-align:center;
+    padding:60px 20px 30px;
+    font-size:2.5rem;
+}
+
+.cars{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    padding:40px 8%;
+}
+
+.card{
+    background:#141414;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(255,215,0,0.3);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.content{
+    padding:20px;
+}
+
+.content h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:gold;
+    font-size:1.2rem;
+    margin-top:10px;
 }
 
 footer{
     text-align:center;
     padding:25px;
-    color:#e2e8f0;
+    background:#050505;
 }
-
 </style>
 </head>
-
 <body>
 
 <header>
-    <h1>Yogi Reddy</h1>
-    <p>Electrical & Electronics Engineering Student</p>
+    <h1>LUXURY MOTORS</h1>
+    <p>Experience Power, Elegance & Innovation</p>
+    <button class="btn">Explore Collection</button>
 </header>
 
-<div class="container">
+<h2 class="section-title">Featured Cars</h2>
 
-    <div class="card">
-        <h2>👨‍🎓 About Me</h2>
-        <p>
-            I am an Electrical and Electronics Engineering student passionate
-            about power systems, automation, programming, and emerging technologies.
-            I enjoy learning new skills and building practical projects.
-        </p>
-    </div>
+<section class="cars">
 
-    <div class="card">
-        <h2>⚡ Skills</h2>
-        <div class="skills">
-            <div class="skill">Electrical Machines</div>
-            <div class="skill">Power Systems</div>
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">Python</div>
-            <div class="skill">Problem Solving</div>
-        </div>
-    </div>
-
-    <div class="card">
-        <h2>🎓 Education</h2>
-        <p><strong>B.Tech - Electrical & Electronics Engineering</strong></p>
-        <p>Expected Graduation: 2027</p>
-    </div>
-
-    <div class="card">
-        <h2>🚀 Career Goal</h2>
-        <p>
-            To become a skilled Electrical Engineer with expertise in modern
-            power systems, renewable energy, and intelligent automation.
-        </p>
-    </div>
-
-    <div class="card">
-        <h2>📞 Contact</h2>
-        <p>Email: yogireddy2202@gmail.com</p>
-        <p>LinkedIn:https://www.linkedin.com/in/veera-yogeswari-polimera-5356672a7</p>
-        <a href="#" class="btn">Connect With Me</a>
-    </div>
-
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800">
+<div class="content">
+<h3>Lamborghini Aventador</h3>
+<p>Ultimate performance and breathtaking design.</p>
+<div class="price">$500,000</div>
+</div>
 </div>
 
+<div class="card">
+<img src="https://images.unsplash.com/photo-1502161254066-6c74afbf07aa?w=800">
+<div class="content">
+<h3>Rolls-Royce Phantom</h3>
+<p>The pinnacle of luxury and comfort.</p>
+<div class="price">$460,000</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800">
+<div class="content">
+<h3>Ferrari SF90</h3>
+<p>Hybrid supercar with extraordinary speed.</p>
+<div class="price">$625,000</div>
+</div>
+</div>
+
+</section>
+
 <footer>
-    © 2026 Yogi Reddy | Ceeras Internship Assignment
+© 2026 Luxury Motors | Premium Car Showcase
 </footer>
 
 </body>
