@@ -3,52 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luxury Cars</title>
+<title>Space Exploration</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+    font-family:Arial,sans-serif;
 }
 
 body{
-    background:#0a0a0a;
+    background:#000;
     color:white;
+    overflow-x:hidden;
+}
+
+/* Animated Stars */
+.stars{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:url('https://www.transparenttextures.com/patterns/stardust.png');
+    animation:moveStars 60s linear infinite;
+    z-index:-1;
+}
+
+@keyframes moveStars{
+    from{transform:translateY(0);}
+    to{transform:translateY(-1000px);}
 }
 
 header{
     height:100vh;
-    background:linear-gradient(rgba(0,0,0,0.5),
-    rgba(0,0,0,0.8)),
-    url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600');
-    background-size:cover;
-    background-position:center;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
+    padding:20px;
 }
 
 header h1{
-    font-size:5rem;
-    letter-spacing:3px;
+    font-size:4rem;
+    text-shadow:0 0 20px cyan;
 }
 
 header p{
+    margin-top:20px;
     font-size:1.2rem;
-    margin-top:15px;
-    color:#ddd;
+    color:#ccc;
 }
 
 .btn{
     margin-top:30px;
     padding:15px 35px;
-    background:gold;
+    background:cyan;
     border:none;
-    border-radius:50px;
+    border-radius:30px;
     font-size:1rem;
     cursor:pointer;
     font-weight:bold;
@@ -56,100 +68,112 @@ header p{
 
 .section-title{
     text-align:center;
-    padding:60px 20px 30px;
+    margin:50px 0 30px;
     font-size:2.5rem;
 }
 
-.cars{
+.planets{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
-    padding:40px 8%;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:0 10% 50px;
 }
 
-.card{
-    background:#141414;
+.planet{
+    background:#111;
     border-radius:20px;
-    overflow:hidden;
-    transition:.4s;
+    padding:25px;
+    text-align:center;
+    transition:0.4s;
 }
 
-.card:hover{
+.planet:hover{
     transform:translateY(-10px);
-    box-shadow:0 0 30px rgba(255,215,0,0.3);
+    box-shadow:0 0 20px cyan;
 }
 
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
+.planet-circle{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    margin:0 auto 15px;
+    animation:rotate 10s linear infinite;
 }
 
-.content{
-    padding:20px;
+.mars{
+    background:linear-gradient(#ff7b54,#b22222);
 }
 
-.content h3{
-    margin-bottom:10px;
+.earth{
+    background:linear-gradient(#00c6ff,#0072ff);
 }
 
-.price{
-    color:gold;
-    font-size:1.2rem;
-    margin-top:10px;
+.jupiter{
+    background:linear-gradient(#d4a373,#8d5524);
+}
+
+@keyframes rotate{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+.mission{
+    text-align:center;
+    padding:50px 10%;
+    background:#050505;
 }
 
 footer{
     text-align:center;
     padding:25px;
-    background:#050505;
+    background:#020202;
 }
 </style>
 </head>
+
 <body>
 
+<div class="stars"></div>
+
 <header>
-    <h1>LUXURY MOTORS</h1>
-    <p>Experience Power, Elegance & Innovation</p>
-    <button class="btn">Explore Collection</button>
+    <h1>🚀 Explore The Universe</h1>
+    <p>Discover planets, galaxies, astronauts and the mysteries of space.</p>
+    <button class="btn">Start Journey</button>
 </header>
 
-<h2 class="section-title">Featured Cars</h2>
+<h2 class="section-title">🪐 Featured Planets</h2>
 
-<section class="cars">
+<section class="planets">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800">
-<div class="content">
-<h3>Lamborghini Aventador</h3>
-<p>Ultimate performance and breathtaking design.</p>
-<div class="price">$500,000</div>
-</div>
+<div class="planet">
+    <div class="planet-circle mars"></div>
+    <h3>Mars</h3>
+    <p>The Red Planet and future home for human exploration.</p>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1502161254066-6c74afbf07aa?w=800">
-<div class="content">
-<h3>Rolls-Royce Phantom</h3>
-<p>The pinnacle of luxury and comfort.</p>
-<div class="price">$460,000</div>
-</div>
+<div class="planet">
+    <div class="planet-circle earth"></div>
+    <h3>Earth</h3>
+    <p>Our beautiful blue planet in the vast universe.</p>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800">
-<div class="content">
-<h3>Ferrari SF90</h3>
-<p>Hybrid supercar with extraordinary speed.</p>
-<div class="price">$625,000</div>
-</div>
+<div class="planet">
+    <div class="planet-circle jupiter"></div>
+    <h3>Jupiter</h3>
+    <p>The largest planet in our solar system.</p>
 </div>
 
 </section>
 
+<section class="mission">
+    <h2>🌌 Space Missions</h2>
+    <br>
+    <p>Apollo 11 • Mars Rover • James Webb Space Telescope</p>
+</section>
+
 <footer>
-© 2026 Luxury Motors | Premium Car Showcase
+    © 2026 Space Exploration | Journey Beyond The Stars
 </footer>
 
 </body>
-</html> 
+</html>
